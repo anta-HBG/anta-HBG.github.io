@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "anta-HBG.github.io",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nlibrary(readxl)\nlibrary(moderndive)\n\novertime &lt;- read_excel(\"C:/Users/alan1015/Desktop/Statistiker/Nämnden/Frånvaro/overtime.xlsx\", sheet=\"Blad2\")\n\nscore_model &lt;- lm(skillnad ~as.numeric(Foreign), data = overtime)\n\nWarning in eval(predvars, data, env): NAs introduced by coercion\n\nsummary(score_model)\n\n\nCall:\nlm(formula = skillnad ~ as.numeric(Foreign), data = overtime)\n\nResiduals:\n       Min         1Q     Median         3Q        Max \n-0.0267388 -0.0076203  0.0000993  0.0075393  0.0307281 \n\nCoefficients:\n                      Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)         -1.433e-02  4.323e-03  -3.315 0.002468 ** \nas.numeric(Foreign)  3.210e-04  8.536e-05   3.761 0.000763 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.01256 on 29 degrees of freedom\n  (1 observation deleted due to missingness)\nMultiple R-squared:  0.3278,    Adjusted R-squared:  0.3046 \nF-statistic: 14.14 on 1 and 29 DF,  p-value: 0.0007629"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
